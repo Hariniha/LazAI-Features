@@ -1,0 +1,456 @@
+  2025-09-21T16:17:26.157010Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 20
+  messages:
+
+[1mUser[0m:
+"You are a helpful assistant. Continue this conversation:\nuser: Hi"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:17:26.907180Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Hello! How can I assist you today?"
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 750.2154ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 84
+    completion_tokens: 65
+    total_tokens: 149
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:18:02.917527Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 49
+  messages:
+
+[1mUser[0m:
+"You are a helpful assistant. Continue this conversation:\nuser: Hi\nassistant: Hello! How can I assist you today?\nuser: What is LazAi and Alith Agent,give me a breif answer"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:18:04.280850Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**LazAI** – A lightweight, cloud‑native AI platform that lets developers quickly spin up and run custom machine‑learning models (LLMs, vision, speech, etc.) via simple APIs. It emphasizes low latency, modular pipelines, and easy integration with existing services, making it a good fit for startups and edge deployments.\n\n**Alith\u{202f}Agent** – An autonomous AI “agent” built on top of LazAI (or similar LLM back‑ends) that can perform goal‑directed tasks without constant human prompting. It combines natural‑language planning, tool‑use (e.g., web browsing, database queries), and self‑feedback loops to execute complex workflows such as data extraction, scheduling, or troubleshooting. In short, LazAI provides the engine, and Alith\u{202f}Agent is a smart, task‑oriented assistant that leverages that engine."
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 1.3633775s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 113
+    completion_tokens: 235
+    total_tokens: 348
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:18:24.318459Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 82
+  messages:
+
+[1mUser[0m:
+"Summarize this in 2 sentences:\nLazAI** – A lightweight, cloud‑native AI platform that lets developers quickly spin up and run custom machine‑learning models (LLMs, vision, speech, etc.) via simple APIs. It emphasizes low latency, modular pipelines, and easy integration with existing services, making..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:18:24.974826Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "LazAI** is a lightweight, cloud‑native AI platform that enables developers to quickly deploy custom machine‑learning models—such as LLMs, vision, and speech—through simple APIs. Its focus on low latency, modular pipelines, and seamless integration makes it especially suitable for startups and edge‑focused deployments."
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 656.4673ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 146
+    completion_tokens: 90
+    total_tokens: 236
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:19:57.936555Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 80
+  messages:
+
+[1mUser[0m:
+"Summarize this in 2 sentences:\nLazAI** is a lightweight, cloud‑native AI platform that enables developers to quickly deploy custom machine‑learning models—such as LLMs, vision, and speech—through simple APIs. Its focus on low latency, modular pipelines, and seamless integration makes it especially s..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:19:58.661704Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "LazAI** is a lightweight, cloud‑native platform that lets developers swiftly deploy custom machine‑learning models—including LLMs, vision, and speech—via simple APIs. Its low‑latency, modular pipelines and easy integration make it ideal for startups and edge‑focused deployments."
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 725.2703ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 144
+    completion_tokens: 84
+    total_tokens: 228
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:20:21.965813Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 25
+  messages:
+
+[1mUser[0m:
+"Classify this text as Positive, Negative, or Neutral:\nLazAi is super fast"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:20:22.824930Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Positive"
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 859.1646ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 89
+    completion_tokens: 37
+    total_tokens: 126
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:20:35.184276Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 22
+  messages:
+
+[1mUser[0m:
+"Classify this text as Positive, Negative, or Neutral:\nI hate flowers"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:20:35.728456Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Negative"
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 544.2189ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 86
+    completion_tokens: 42
+    total_tokens: 128
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:20:40.591998Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 20
+  messages:
+
+[1mUser[0m:
+"You are a helpful assistant. Continue this conversation:\nuser: Hi"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:20:41.251309Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Hello! How can I help you today?"
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 659.3585ms
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 84
+    completion_tokens: 33
+    total_tokens: 117
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-09-21T16:21:03.690367Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 45
+  messages:
+
+[1mUser[0m:
+"You are a helpful assistant. Continue this conversation:\nuser: Hi\nassistant: Hello! How can I help you today?\nuser: What is LazAi?Give me a breif answer"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-09-21T16:21:04.707109Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**LazAI** is an AI‑powered platform that offers tools for building, training, and deploying machine‑learning models quickly and at scale. It provides a user‑friendly interface, pre‑built models, and APIs that let developers integrate intelligent features—such as natural‑language processing, computer vision, and predictive analytics—into their applications without needing deep expertise in data science."
+    finish_reason: Eos
+    generation_settings: 
+    model: "openai/gpt-oss-120b"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 1.0168042s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 109
+    completion_tokens: 119
+    total_tokens: 228
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
